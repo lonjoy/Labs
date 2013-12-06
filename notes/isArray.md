@@ -12,20 +12,24 @@
 - 否则返回 **false**
 
 ### 低版本IE浏览器Polyfill
-
+	
+	```js
 	if(!Array.isArray || !isArray) {
 		var isArray;
 	    Array.isArray = isArray = function isArray(arr) {
 	        return Object.prototype.toString.call(arr) === '[object Array]';
 	    }
 	}
+	```
 
 #### 用法
 
+	```js
 	var arr = [1,2,3,4];
-	
+
 	Array.isArray(arr); // true
 	isArray(arr); // true
 
 	Array.isArray([1,2]);
 	isArray([1,2]);
+	```
