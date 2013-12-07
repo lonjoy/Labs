@@ -13,7 +13,7 @@
 
 ### 低版本IE浏览器Polyfill
 	
-	if(!Array.isArray || !isArray) {
+	if(!Array.isArray && !isArray) {
 		var isArray;
 	    Array.isArray = isArray = function isArray(arr) {
 	        return Object.prototype.toString.call(arr) === '[object Array]';
