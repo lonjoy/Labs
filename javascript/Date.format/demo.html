@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>date.format example</title>
+<style type="text/css">
+body {
+	padding: 30px;
+	margin: 0;
+	font: 16px tahoma arial sans-serif;
+	color: #333;
+}
+h2 {
+	height: 2em;
+	line-height: 2em;
+	font-size: 2em;
+	border-bottom: 1px solid #ddd;
+}
+pre {
+	line-height: 24px;
+	font-size: 14px;
+	font-family: consolas;
+}
+pre, div {
+	padding: 20px;
+	border: 3px dashed #DDD;
+	background: #f7f7f7;
+	border-radius: 3px;
+}
+div {
+	margin-top: 20px;
+}
+pre:hover, div:hover {
+	border-color: #BBB;
+}
+</style>
+</head>
+<body>
+<h2>Example code:</h2>
+<pre>var date = new Date();
+document.querySelector('#time').innerHTML = date.format('YYYY年MM月DD日DDDD T H时m分s秒');</pre>
+<h2>Example output:</h2>
+<div>当前时间是：<span id="time"></span></div>
+<script type="text/javascript" src="date.format.js"></script>
+<script type="text/javascript">
+var date = new Date();
+document.querySelector('#time').innerHTML = date.format('YYYY年MM月DD日DDDD T H时m分s秒');
+</script>	
+</body>
+</html>
