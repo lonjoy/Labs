@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>isMobile</title>
+<style type="text/css">
+body {
+	padding: 10px;
+	font-size: 20px;
+	font-family: Arial, tahoma, sans-serif;
+	line-height: 180%;
+}
+h2 {
+	font-size: 28px;
+	margin: 0;
+	padding: 0;
+}
+.demo {
+	background: #f6f6f6;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+.demo #result {
+	color: #C00;
+}
+</style>
+</head>
+<body>
+<div class="demo">
+	<h2>isMobile</h2>
+	<p id="result"></p>
+	<h2>userAgent</h2>
+	<p id="userAgent"></p>
+</div>
+<script type="text/javascript">
+function isMobile() {
+    return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile')!== -1);
+}
+document.querySelector('#result').innerHTML = isMobile();
+document.querySelector('#userAgent').innerHTML = navigator.userAgent;
+</script>	
+</body>
+</html>
