@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.5/styles/monokai_sublime.min.css">
+<script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+<script>
+hljs.tabReplace = '    ';
+hljs.initHighlightingOnLoad();
+</script>
+<title>addRules demo</title>
+</head>
+<body>
+<script src="addRules.js"></script>
+<script type="text/javascript">
+addRule('body', {background: '#FFC'});
+var div = document.createElement('div');
+div.id = 'dom';
+document.body.appendChild(div);
+addRule('#dom',{
+	position: 'relative',
+	height: '200px',
+	margin: '10px',
+	background: '#999',
+	border: '3px solid #09F'
+});
+addRule('#dom:after', {
+	position: 'absolute',
+	left: 0,
+	top: 0,
+	width: '100%',
+	height: '200px',
+	'line-height': '200px',
+	content: '"addRule"',
+	'text-shadow': '0 1px 1px #FFF',
+	'font-size': '100px',
+	'-webkit-text-shadow': '0 1px -2px 0',
+	color: '#000'
+});
+addRule('pre', {
+	margin: '10px',
+	'line-height': '28px',
+	'font-family': 'consolas, arial, sans-serif',
+	border: '1px solid #CCC',
+	'border-radius': '3px',
+	'font-size': '14px'
+});
+addRule('pre code', {
+	padding: '10px',
+	'border-radius': '2px'
+});
+</script>
+<pre><code class="javascript">addRule('body', {background: '#FFC'});
+var div = document.createElement('div');
+div.id = 'dom';
+document.body.appendChild(div);
+addRule('#dom',{
+	position: 'relative',
+	height: '200px',
+	margin: '10px',
+	background: '#999',
+	border: '3px solid #09F'
+});
+addRule('#dom:after', {
+	position: 'absolute',
+	left: 0,
+	top: 0,
+	width: '100%',
+	height: '200px',
+	'line-height': '200px',
+	content: '"addRule"',
+	'text-shadow': '0 1px 1px #FFF',
+	'font-size': '100px',
+	'-webkit-text-shadow': '0 1px -2px 0',
+	color: '#000'
+});
+addRule('pre', {
+	margin: '10px',
+	'line-height': '20px',
+	'font-family': 'consolas, arial, sans-serif',
+	border: '1px solid #CCC',
+	'border-radius': '3px',
+	'font-size': '14px'
+});
+addRule('pre code', {
+	padding: '10px',
+	'border-radius': '2px'
+});</code></pre>	
+</body>
+</html>
