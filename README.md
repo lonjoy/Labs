@@ -11,3 +11,7 @@ Labs
 - [isArray](javascript/isArray.md)
 - [使用UglifyJS压缩js](notes/use-uglifyjs.md)
 - [EventEmitter笔记](node.js/eventemitter-note.md)
+
+## Demo
+
+- [Demo](http://basecss.github.io/Labs/)
