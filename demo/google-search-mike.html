@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google search mike</title>
+<link rel="stylesheet" href="reset.css">
+<style type="text/css">
+#spchk {
+	position: relative;
+	margin: 200px;
+	width: 165px;
+	height: 165px;
+	-webkit-transform: scale(1.0);
+	-webkit-transition: -webkit-transform .218s, opacity .218s ease-in;
+}
+#spchb {
+	background-color: #D2423B;
+	border: 1px solid #B33731;
+	border-radius: 100%;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.15), inset 0 -2px 0px rgba(255, 255, 255, 0.1);
+	-webkit-transition: background-color .218s, border .218s, box-shadow .218s;
+	display: inline-block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	z-index: 1101;
+	opacity: 1;
+	-webkit-transform: scale(1.0);
+	-webkit-transition-delay: 0;
+	visibility: visible;
+}
+#spchm {
+	display: block;
+	height: 87px;
+	width: 42px;
+	top: 47px;
+	left: 43px;
+	position: absolute;
+	-webkit-transform: scale(1);
+	z-index: 1103;
+	cursor: pointer;
+	visibility: visible;
+}
+#mrcv {
+	width: 24px;
+	height: 46px;
+	position: absolute;
+	background-color: #FFF;
+	left: 25px;
+	border-radius: 30px;
+	box-shadow: 0px 4px 2px 0 #B6413B;
+}
+#mwrp {
+	overflow: hidden;
+	width: 52px;
+	height: 53px;
+	position: absolute;
+	bottom: 0;
+	left: 11px;
+}
+#mstm {
+	width: 9px;
+	height: 14px;
+	position: absolute;
+	background-color: #FFF;
+	left: 22px;
+	bottom: 14px;
+	box-shadow: 0 4px 2px 0 #B6413B;
+	z-index: 1;
+}
+#mshl {
+	width: 38px;
+	height: 57px;
+	position: absolute;
+	border: 7px solid #FFF;
+	border-radius: 28px;
+	bottom: 27px;
+	box-shadow: 0px 4px 2px 0 #B6413B;
+	z-index: 0;
+}
+#spchl {
+	opacity: 1;
+	position: absolute;
+	pointer-events: none;
+	width: 301px;
+	height: 301px;
+	top: -69px;
+	left: -69px;
+	z-index: 1050;
+	display: inline-block;
+	-webkit-transform: scale(0.1);
+	background-color: #EEE;
+	border-radius: 100%;
+	border: 1px solid #DEDEDE;
+	-webkit-transition: opacity .218s;
+	visibility: visible;
+}
+#spchp {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -170px;
+	left: -170px;
+	z-index: 1050;
+	display: inline-block;
+	width: 501px;
+	height: 501px;
+	border-radius: 100%;
+	border: 2px solid #BABABA;
+	-webkit-transition: opacity .218s;
+	visibility: visible;
+}
+#spchk:hover #spchb {
+	background-color: #C4352E;
+	border: 1px solid #A62E28;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.15), inset 0 -2px 1px rgba(255, 255, 255, 0.1);
+	-webkit-transition: background-color .218s, border .218s, box-shadow .218s;
+	opacity: 1;
+}
+#spchk:active #spchb {
+	background-color: #A42C27;
+	border: 1px solid #8D1D17;
+	box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.05), inset 0 -1px 1px rgba(255, 255, 255, 0.1);
+	-webkit-transition: background-color 0s, border 0s, box-shadow 0s;
+}
+#spchk:active #mrcv {
+	background-color: #72120E;
+	box-shadow: inset 0 4px 2px 0 #590907;
+}
+#spchk:active #mstm {
+	background-color: #72120E;
+	box-shadow: 0 0 #000;
+	z-index: 0;
+}
+#spchk:active #mshl {
+	border-color: #72120E;
+	box-shadow: inset 0 -2px 2px 2px #590907;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+<div id="spchk">
+	<!-- UI -->
+	<span id="spchb">
+		<span id="spchm">
+			<span id="mrcv"></span>
+			<div id="mwrp">
+				<span id="mstm"></span>
+				<span id="mshl"></span>
+			</div>
+		</span>
+	</span>
+	<!-- 动画元素 -->
+	<span id="spchl"></span>
+	<span id="spchp"></span>
+</div>
+</body>
+</html>
