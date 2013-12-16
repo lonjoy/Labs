@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>hilight</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 30px;
+}
+.list {
+	background: #09F;
+	display: inline-block;
+	padding: 0 10px;
+}
+.list > .item {
+	width: 100px;
+	height: 32px;
+	margin: 10px 0;
+	background: #F00;
+	color: #000;
+}
+.list > .item:hover {
+	opacity: 1;
+}
+.list:hover > .item:not(:hover) {
+	opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<div class="list">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+</div>
+</body>
+</html>
