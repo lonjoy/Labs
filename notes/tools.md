@@ -12,3 +12,5 @@
 - [Sketch](http://www.bohemiancoding.com/sketch/) - Mac平台超赞的设计师工具箱
 
 - [JSHint](http://www.jshint.com/)
+
+- [devserver](https://npmjs.org/package/devserver)
