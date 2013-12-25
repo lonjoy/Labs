@@ -47,3 +47,20 @@ function removeEvent(ele, type, callback) {
 		ele['on'+type] = null;
 	}
 }
+// toArray
+function toArray() {
+	return Array.prototype.slice.call(arguments, 0);
+}
+// remove element from Array instance
+/*
+Object.getOwnPropertyNames(Array.prototype)
+Get all Array.prototype properties
+*/
+Array.prototype.remove = Array.prototype.remove || function(member) {
+		var index = this.indexOf(member);
+		if(index > -1) {
+			this.splice(index, 1);
+		}
+		return this;
+	}
+}
