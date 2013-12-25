@@ -14,3 +14,4 @@
 - [JSHint](http://www.jshint.com/)
 
 - [devserver](https://npmjs.org/package/devserver)
+- [node-xlsx](https://npmjs.org/package/node-xlsx) - 处理excel的利器
