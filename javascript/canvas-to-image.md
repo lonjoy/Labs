@@ -31,4 +31,4 @@ document.getElementById('img').src = data;
 
 用 `canvas` 绘制目标图形，使用 `toDataURL()` 方法转为 base64 格式的数据填充到 `img` 元素上。
 
-- PS: retina 屏幕下绘制 2x 图形有些无礼.
+- PS: retina 屏幕下绘制 2x 图形有些无力。
