@@ -187,7 +187,7 @@ classList.someMethod = function(){}
 - [classList.js - 兼容IE8+](https://github.com/eligrey/classList.js)
 - [gits2](https://gist.github.com/termi/3952026)
 
-可以市容如下方式来检测浏览器是否支持 `classList`:
+可以使用如下方式来检测浏览器是否支持 `classList`:
 
 ```javascript
 if('classList' in document.createElement('div')) {
