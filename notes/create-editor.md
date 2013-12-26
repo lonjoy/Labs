@@ -4,3 +4,5 @@
 
 
 - 将代码添加到浏览器地址栏即可
+
+	data:text/html, <html contenteditable>
