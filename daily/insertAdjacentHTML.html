@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>insertAdjacentHTML</title>
+<style type="text/css">
+#dom {
+	background: #f6f6f6;
+	padding: 10px;
+	border: 2px solid #DDD;
+}
+span {
+	display: block;
+	border-bottom: 2px dashed #CCC;
+	padding: 5px 0;
+	margin: 10px 0;
+}
+</style>
+</head>
+<body>
+<div id="dom"><span>init</span></div>
+<script type="text/javascript">
+var dom = document.getElementById('dom');
+dom.insertAdjacentHTML('beforebegin', '<span>beforebegin</span>');
+dom.insertAdjacentHTML('afterbegin', '<span>afterbegin</span>');
+dom.insertAdjacentHTML('beforeend', '<span>beforeend</span>');
+dom.insertAdjacentHTML('afterend', '<span>afterend</span>');
+</script>	
+</body>
+</html>
