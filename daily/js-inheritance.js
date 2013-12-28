@@ -34,3 +34,10 @@ basecss instanceof Employee === Employee.prototype.isPrototypeOf(basecss);
 // Person.prototype.info.call(this)
 Array.prototype.slice.call(arguments);
 
+// other
+Object.getPrototypeOf({}) === Object.prototype;
+({}).__proto__ === Object.prototype;
+// __proto__ 并非标准属性
+var o = Object.create(Person);
+o.__proto__ === Person;
+
