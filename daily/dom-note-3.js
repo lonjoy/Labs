@@ -13,7 +13,7 @@ ele.tagName;
 // 获取指定属性值
 ele.getAttribute('class')
 
-// 设置属性和值得
+// 设置属性和值
 ele.setAttribute('class', 'className')
 
 // 是否包含指定属性，返回布尔值
