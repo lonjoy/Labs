@@ -56,6 +56,12 @@ style.sheet.deleteRule(2);
 /**
  * on[eventType]
  * addEventListener(eventType, callback, useCapture);
+ * removeEventListener(eventType, callback);
+ * callback(event) -> event 信息
+ * preventDefault() 阻止默认行为
+ * stopPropagation() 阻止冒泡
+ * stopImmediatePropagation()
+ * 事件代理使用
  */
 
 // 自定义事件
