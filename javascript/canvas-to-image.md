@@ -72,3 +72,32 @@ window.addEventListener('load', function(){
 	// render
 }, false);
 ```
+
+**使用Node.js生成图片**
+
+将图片信息发送到服务器：
+
+```javascript
+img.onload = function(){
+    // 图片载入后将数据post到服务器生成图片并保存
+}
+```
+
+生成图片，使用 `canvas` 画出来的图片是 `base64` 格式的，在服务器端我们需要处理 base64 编码：
+
+```javascript
+app.post('/save', function(){
+    var img = req.body.imgContent; // 此时传递的是base64格式的数据
+    // 解码
+    var base64Data = ima.replace(/^data:image\/\w+;base64,/, "");
+    var image = new Buffer(base64Data, 'base64');
+    // 生成图片
+    fs.writeFile('xxx.png',image, function(err){
+        if(err) {
+            res.send(JSON.stringify({status:0,msg:'保存失败'}));
+        } else {
+            res.send(JSON.stringify({status:1,msg:'保存成功'}));
+        }
+    });
+});
+```
