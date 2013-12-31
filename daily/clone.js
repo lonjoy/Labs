@@ -1,5 +1,5 @@
 /*
- * 浅复制，子类实例引用类型属性的修改会影响父类对应的属性
+ * 浅复制
  */
 function clone(parent, child) {
     var i;
