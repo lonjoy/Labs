@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>localStorage</title>
+</head>
+<body>
+<p><label for="name">username:</label><input type="text" name="name" id="name" placeholder="用户名"></p>
+<p><label for="pwd">password:</label><input type="password" name="pwd" id="pwd"></p>
+<button id="clear">清除localStorage</button>
+<button id="refresh">刷新页面看看</button>
+<button id="val">查看localStorage值</button>
+<script type="text/javascript">
+var name = localStorage.getItem('name');
+if(name !== 'null') {
+	document.querySelector('[name=name]').value = name;
+}
+
+document.querySelector('[name=name]').onblur = function() {
+	localStorage.setItem('name', this.value.trim());
+};
+
+document.querySelector('#clear').onclick = function() {
+	localStorage.removeItem('name');
+};
+
+document.querySelector('#refresh').onclick = function() {
+	location.reload(true);
+};
+document.querySelector('#val').onclick = function() {
+	alert(localStorage.getItem('name'));
+};
+</script>	
+</body>
+</html>
