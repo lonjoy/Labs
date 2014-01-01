@@ -2,30 +2,39 @@
 // http://en.wikipedia.org/wiki/Quicksort
 
 var qs = function(arr) {
+	// 参数数组验证
+	if(!Array.isArray(arr)) {
+
+		throw Error('参数非法');
+
+	}
+
 	// 0/1 个元素
 	if(arr.length <= 1) {
+
 		return arr;
+
 	}
 	// 选取中间或临近中间元素索引
 	var mIndex = Math.floor(arr.length/2);
 	// 选取中间的基准元素
+	// 也可以随机选取一个元素
 	var mItem = arr.splice(mIndex,1)[0];
 	// 定义存放基准元素左右的部分的空数组
 	var l = [],
-		r = [];
+	r = [];
 
-	// 分割数组
 	var arrLength = arr.length;
-
-	for(var i=0;i<arr.length;i++) {
+	// 分割数组
+	for(var i=0;i<arrLength;i++) {
 
 		if(arr[i] < mItem) {
 
-			l.push(arr[i]);
+			l.push(arr[i]); // left part
 
 		} else {
 
-			r.push(arr[i]);
+			r.push(arr[i]); // right part
 
 		}
 	}
