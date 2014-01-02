@@ -18,7 +18,6 @@ var qs = function(arr) {
 	// 选取中间或临近中间元素索引
 	var mIndex = Math.floor(arr.length/2);
 	// 选取中间的基准元素
-	// 也可以随机选取一个元素
 	var mItem = arr.splice(mIndex,1)[0];
 	// 定义存放基准元素左右的部分的空数组
 	var l = [],
