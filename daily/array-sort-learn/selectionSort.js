@@ -1,10 +1,9 @@
 // selectionSort
 // http://en.wikipedia.org/wiki/Selection_sort
 /**
- * stag
- * 1. 将当前项与每一项比较
- * 2. 将比当前项更小的与当前项交换
- * 3. 自增当前项索引，重复1，2直到完成任务
+ * 1. 比较当前项与数组其他所有项
+ * 2. 找到比较结果中较小的项并与当前项交换
+ * 3. 重复比较，交换直到达成目标
  */
 // 用于交换元素的方法
 var swap = function(arr, a, b) {
