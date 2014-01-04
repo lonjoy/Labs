@@ -7,7 +7,7 @@ var combo = function() {
 			// 自由属性检测，过滤已有属性
 			if(source.hasOwnProperty(key) && !dest[key]) {
 
-				des[key] = source[key]
+				dest[key] = source[key]
 
 			}
 
@@ -28,14 +28,14 @@ var combo = function() {
 };
 
 // example
-var a = {};
-var b = {
+var aa = {};
+var bb = {
 	name: 'basecss',
 	age: 22
 };
-console.log(combo(a, b));
-var c = {
+console.log(combo(aa, bb));
+var cc = {
 	job: 'f2e',
 	city: '深圳'
 };
-console.log(combo(a,b,c));
+console.log(combo(aa,cc));
