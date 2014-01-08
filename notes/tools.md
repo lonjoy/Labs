@@ -15,3 +15,5 @@
 
 - [devserver](https://npmjs.org/package/devserver)
 - [node-xlsx](https://npmjs.org/package/node-xlsx) - 处理excel的利器
+
+- [code-prettify](https://code.google.com/p/google-code-prettify/)  代码高亮工具
