@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>html 转义</title>
+<style type="text/css">
+textarea {
+	width: 100%;
+	height: 300px;
+}
+</style>
+</head>
+<body>
+<textarea id="origin" placeholder="这里输入 html 代码"></textarea>
+<p style="text-align: center;"><button style="padding:10px 50px;" id="btn">查看结果</button></p>
+<textarea id="result"></textarea>
+<script type="text/javascript">
+var origin = document.getElementById('origin'),
+	result = document.getElementById('result'),
+	btn = document.getElementById('btn');
+
+btn.addEventListener('click', function(){
+
+	var originCode = origin.value || '<div>test</div>';
+
+	var ret = new Option(originCode).innerHTML;
+
+	result.value = ret;
+
+}, false);
+
+</script>	
+</body>
+</html>
